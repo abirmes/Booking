@@ -27,3 +27,14 @@
 
 
 
+## 20/02
+
+- application des methodes orm,presque terminé la creation et affichage des salles sans formulaire de creation.
+- une petite documentation sur les location: header et redirect.
+- les relations entre les modeles
+
+
+
+
+
+

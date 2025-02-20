@@ -43,13 +43,13 @@
 </head>
 <body>
     <div class="sidebar">
-        <h3>Welcome to BOOKING</h3>
+        <h3>BOOKING</h3>
         <a href="#">Home</a>
     </div>
 
     <div class="main-content">
         <div class="header">
-            <h4>Feel Free To Browse</h4>
+            <h4>Feel Free To Book</h4>
         </div>
         <div class="content">
           

@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class TableSalle extends Migration
+class UpdatedUsers extends Migration
 {
     /**
      * Run the migrations.
@@ -13,15 +13,11 @@ class TableSalle extends Migration
      */
     public function up()
     {
-        Schema::create('salles', function (Blueprint $table) {
-            $table->id();
-            $table->integer('number');
-            $table->string('persan');
-            $table->string('evaluation');
-            $table->string('etat');
-            $table->timestamps();
+        Schema::table('users', function (Blueprint $table) {
+            $table->foreignId('role_id')->constrained();
         });
     }
+
 
     /**
      * Reverse the migrations.
@@ -30,6 +26,8 @@ class TableSalle extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('salles');
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropColumn('role_id');
+        });
     }
 }

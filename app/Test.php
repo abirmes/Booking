@@ -3,8 +3,11 @@
 namespace App;
 
 use Illuminate\Database\Eloquent\Model;
+use Salle;
 
-class SalleP extends Model
+class Test extends Model
 {
-    //
+    
 }
+
+
