@@ -20,3 +20,11 @@ Route::get('/88', function () {
 
 
 Route::get('/', [salleController::class, 'index']);
+Route::post('/' , [salleController::class, 'create'])->name('salle.create');
+Route::delete('/deleteSalle/{id}', [SalleController::class, 'delete'])->name('deleteSalle');
+// Route::get('/salle/update');
+Route::get('/supdate/{id}', [SalleController::class, 'edit'])->name('supdate/{id}');
+Route::post('/updateSalle', [SalleController::class, 'update'])->name('updateSalle');
+Route::resource('salleController', 'salleController');
+
+
